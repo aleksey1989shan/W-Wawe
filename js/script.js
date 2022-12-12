@@ -276,7 +276,7 @@ new JustValidate('.form', {
 
 let playBtn = document.querySelectorAll('.cards__btn');
 
-function funPlay() {
+function fun() {
     if (this.classList.contains('cards__play-activ')) {
         this.classList.toggle('cards__play-activ');
         return;
@@ -290,7 +290,7 @@ function funPlay() {
 }
 
 for (let i = 0; i < playBtn.length; i++) {
-    playBtn[i].onclick = funPlay;
+    playBtn[i].onclick = fun;
 }
 
 
