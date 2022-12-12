@@ -3682,6 +3682,13 @@ circle {
 
 
 @media (max-width: 767px) {
+  
+  .js-validate-error-label {
+    top: 3px;
+    left: 27px;
+    font-size: 10px;
+    line-height: 10px;
+  }
 
   .images {}
 
