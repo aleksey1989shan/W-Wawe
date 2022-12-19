@@ -1541,11 +1541,13 @@ circle {
 }
 
 .genre__border {
+  display: block;
   padding: 14px 0 15px 15px;
   border: 1px solid #E6E8EC;
 }
 
 .genre__title {
+  display: block;
   font-weight: 500;
   margin-bottom: 2.8px;
   transition: all 0.3s ease;
@@ -3682,7 +3684,7 @@ circle {
 
 
 @media (max-width: 767px) {
-  
+
   .js-validate-error-label {
     top: 3px;
     left: 27px;
@@ -3745,10 +3747,11 @@ circle {
     line-height: 12px;
     color: var(--blueHov);
   }
-  
+
   .image__btm path {
     fill: var(--blueFoc);
   }
+
 
   .archive {
 
