@@ -243,9 +243,6 @@ circle {
   transition: all 0.3s ease 0s;
 } */
 
-.header-content__list-link:hover {
-  color: var(--blueHov);
-}
 
 .header-content__list-link:focus {
   background: var(--blueFoc);
@@ -253,11 +250,14 @@ circle {
 
 }
 
+.header-content__list-link:hover {
+  color: var(--blueHov);
+}
+
 .header-content__list-link:active {
   color: var(--blueAc);
   background: transparent;
 }
-
 
 
 
@@ -272,7 +272,7 @@ circle {
 
 .header-content__form-input {
   background: transparent;
-  margin-left: 32px;
+  /* margin-left: 5px; */
 }
 
 .header-content__form-buttonclick {
@@ -342,11 +342,11 @@ circle {
 
 .header-content__form {
   justify-content: start;
-  padding: 17px 13px 17px 0;
+  padding: 10px 10px 10px 10px;
   position: absolute;
-  top: -17px;
-  right: -50px;
-  width: 539px;
+  top: -5px;
+  right: -15px;
+  width: 328px;
   background: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
@@ -362,16 +362,20 @@ circle {
   transition: opacity 0.3s ease;
 }
 
+.header-content__form-button svg {
+  margin: 0 0 -5px 0;
+}
+
 .form-active .header-content__form-input {
   /* visibility: visible; */
-  margin-right: 14px;
-  width: 412px;
+  margin-right: 5px;
+  width: 278px;
   border-bottom: 1px solid #6D31EE;
 }
 
 .form-active .header-content__form-button {
   background: transparent;
-  margin-right: 22px;
+  /* margin-right: 22px; */
 }
 
 .form-active .header-content__form-closed {
@@ -966,6 +970,9 @@ circle {
   border-color: #D2D5DD;
 }
 
+.is-selected {
+  display: none;
+}
 
 
 /* --choise-- */
@@ -2400,7 +2407,7 @@ circle {
   border: 2px solid #6D31EE;
 }
 
-.playlist__input:focus+.playlist__box {
+.playlist__lab:focus .playlist__box {
   border: 2px solid #6D31EE;
   background: #D2D5DD;
 }
@@ -3981,12 +3988,12 @@ circle {
     border: 2px solid #6D31EE;
   }
 
-  .playlist__input:focus+.playlist__box {
+  .playlist__lab:focus .playlist__box {
     border: 2px solid #6D31EE;
     background: #70737b64;
   }
 
-  .playlist__input:active+.playlist__box {
+  .playlist__lab:active .playlist__box {
     border: 7px solid #6D31EE;
     background: transparent;
   }
@@ -4513,7 +4520,11 @@ circle {
     position: relative;
   }
 
-  .bgColor::after {
+
+
+
+
+  .header-bottom::after {
     content: '';
     position: absolute;
     top: -1px;
@@ -4521,9 +4532,20 @@ circle {
     z-index: 0;
     width: 100%;
     height: 45px;
+    transition: background 0.3s ease;
+  }
+
+  .bgColor::after {
     background: rgba(230, 232, 236, 0.4);
     border: 1px solid #E6E8EC;
+    transition: background 0.3s ease;
+    z-index: 0;
   }
+
+
+
+
+
 
   .header-bottom__wrapper {
     /* display: none; */
@@ -4643,12 +4665,18 @@ circle {
   }
 
   .header-bottom__music {
-    display: none;
+    transform: scale(0);
+    height: 0;
+    /* display: none; */
+    transition: all 0.3s ease;
   }
 
   .musicNone {
-    display: block;
+    height: 100%;
+    transform: scale(1);
+    /* display: block; */
     margin: 6px 0 3px 0;
+    transition: all 0.3s ease;
   }
 
   /*  */
@@ -4810,7 +4838,10 @@ circle {
     display: none;
   }
 
-
+  .swiper-slide__text {
+    display: block;
+    width: 123px;
+  }
 
 
 
@@ -4863,6 +4894,11 @@ circle {
 
 
 @media (max-width: 450px) {
+
+  .header-content__form {
+    right: -25px;
+    width: 245px;
+  }
 
   .cards {
     flex-direction: column;
