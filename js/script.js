@@ -7,6 +7,8 @@ let links = menu.querySelectorAll('.header-content__list-item');
 let headerBottomNav = document.querySelector('.header-bottom__nav');
 let headerBottomFlex = document.querySelector('.header-bottom__wrapper');
 
+let linksBottom = document.querySelectorAll('.header-bottom__link');
+
 BurgerOpen.addEventListener('click', function () {
 
     headerBottomNav.classList.toggle('bottom__nav-active');
@@ -24,6 +26,17 @@ links.forEach(function (el) {
         BurgerOpen.classList.remove('burger-active');
         menu.classList.remove('nav-active');
         document.body.classList.remove('stop-scroll');
+        headerBottomNav.classList.remove('bottom__nav-active');
+    });
+});
+
+linksBottom.forEach(function (elem) {
+    elem.addEventListener('click', function () {
+
+        BurgerOpen.classList.remove('burger-active');
+        menu.classList.remove('nav-active');
+        document.body.classList.remove('stop-scroll');
+        headerBottomNav.classList.remove('bottom__nav-active');
     });
 });
 
@@ -39,9 +52,16 @@ openBtn.addEventListener('click', function () {
     openForm.classList.add('form-active');
 });
 
-closedBtn.addEventListener('click', function () {
-    openForm.classList.remove('form-active');
-});
+document.addEventListener("click", function (e) {
+    let target = e.target;
+    if (!target.closest(".header-content__wrapper")) {
+        openForm.classList.remove("form-active");
+    }
+})
+
+// closedBtn.addEventListener('click', function () {
+//     openForm.classList.remove('form-active');
+// });
 
 //------------------------------------------
 
