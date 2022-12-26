@@ -244,7 +244,7 @@ circle {
 } */
 
 
-.header-content__list-link:focus {
+.header-content__list-link:focus-visible {
   background: var(--blueFoc);
   color: #FFF;
 
@@ -304,11 +304,11 @@ circle {
   fill: #AA9DFA;
 }
 
-.header-content__form-buttonclick:focus path {
+.header-content__form-buttonclick:focus-visible path {
   stroke: #6D31EE;
 }
 
-.header-content__form-buttonclick:focus rect {
+.header-content__form-buttonclick:focus-visible rect {
   fill: #6D31EE;
 }
 
@@ -415,7 +415,7 @@ circle {
   color: rgba(161, 166, 180, 1);
 }
 
-.header-content__form-closed:focus {
+.header-content__form-closed:focus-visible {
   outline: 2px solid #FF9900;
 }
 
@@ -458,7 +458,7 @@ circle {
   color: #FFFFFF;
 }
 
-.login:focus {
+.login:focus-visible {
   background: var(--blueFoc);
   color: #121723;
 }
@@ -598,7 +598,7 @@ circle {
   color: var(--blueHov);
 }
 
-.header-bottom__link:focus {
+.header-bottom__link:focus-visible {
   background: var(--blueFoc);
   color: #FFF;
 
@@ -2045,7 +2045,7 @@ circle {
   background: var(--blueHov);
 }
 
-.header-bottom__music-play:focus {
+.header-bottom__music-play:focus-visible {
   background: var(--blueFoc);
 }
 
@@ -2086,7 +2086,7 @@ circle {
   background: var(--blueFoc);
 }
 
-.wave__btn:focus {
+.wave__btn-visible {
   outline: 2px solid var(--blueAc);
   background: var(--blueFoc);
 }
@@ -2100,7 +2100,7 @@ circle {
   color: #FFF;
 }
 
-.Podcasts__btn:focus {
+.Podcasts__btn:focus-visible {
   background: var(--blueFoc);
   color: #FFF;
 }
@@ -2119,11 +2119,11 @@ circle {
   stroke: var(--blueHov);
 }
 
-.cards__btn:focus svg path {
+.cards__btn:focus-visible svg path {
   fill: var(--blueFoc);
 }
 
-.cards__btn:focus svg circle {
+.cards__btn:focus-visible svg circle {
   stroke: var(--blueFoc);
 }
 
@@ -2155,20 +2155,20 @@ circle {
   fill: var(--blueFoc);
 }
 
-.cards__social button:focus {
+.cards__social button:focus-visible {
   background: var(--blueFoc);
   color: #FFF;
 }
 
-.triangle:focus path {
+.triangle:focus-visible path {
   fill: #FFF;
 }
 
-.heart:focus path {
+.heart:focus-visible path {
   fill: #FFF;
 }
 
-.share:focus path {
+.share:focus-visible path {
   fill: #FFF;
 }
 
@@ -2211,12 +2211,12 @@ circle {
   outline-offset: 7px;
 }
 
-.image__btm:focus {
+.image__btm:focus-visible {
   color: #FFF;
   background: var(--blueFoc);
 }
 
-.image__btm:focus path {
+.image__btm:focus-visible path {
   fill: #FFF;
 }
 
@@ -2245,7 +2245,7 @@ circle {
   color: #FFF;
 }
 
-.archive__btn:focus {
+.archive__btn:focus-visible {
   background: var(--blueFoc);
 }
 
@@ -2259,7 +2259,15 @@ circle {
   background: #F5F6F7;
 }
 
-.choices:focus {
+
+
+
+
+
+
+
+
+.choices:focus-visible {
   outline: 1px solid #6D31EE;
   border-radius: 10px;
 }
@@ -2277,10 +2285,15 @@ circle {
   color: #A1A6B4;
 }
 
+.choices__item{
+    transition: all .3s ease;
+}
+
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   background-color: #AA9DFA;
   color: #121723;
+  transition: all .3s ease;
 }
 
 .ac__btn:hover .ac__arrow {
@@ -2297,17 +2310,17 @@ circle {
 }
 
 
-.ac__btn:focus .ac__arrow {
+.ac__btn:focus-visible .ac__arrow {
   background: transparent;
   border: 2px solid #A1A6B4;
 }
 
-.ac__btn:focus .ac__arrow::after {
+.ac__btn:focus-visible .ac__arrow::after {
   border-bottom: 2px solid #A1A6B4;
   border-left: 2px solid #A1A6B4;
 }
 
-.ac__btn:focus {
+.ac__btn:focus-visible {
   color: #FFF;
   background: #292E39;
 }
@@ -2344,7 +2357,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.guest__inst:focus path {
+.guest__inst:focus-visible path {
   fill: var(--blueFoc);
 }
 
@@ -2359,7 +2372,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.guest__face:focus path {
+.guest__face:focus-visible path {
   fill: var(--blueFoc);
 }
 
@@ -2374,7 +2387,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.guest__tvit:focus path {
+.guest__tvit:focus-visible path {
   fill: var(--blueFoc);
 }
 
@@ -2383,7 +2396,7 @@ circle {
 }
 
 
-.guest__btn:focus {
+.guest__btn:focus-visible {
   background: var(--blueHov);
   color: #FFF;
   border: 2px solid var(--blueHov);
@@ -2407,7 +2420,7 @@ circle {
   border: 2px solid #6D31EE;
 }
 
-.playlist__lab:focus .playlist__box {
+.playlist__lab:focus-visible .playlist__box {
   border: 2px solid #6D31EE;
   background: #D2D5DD;
 }
@@ -2427,7 +2440,7 @@ circle {
   background: #292E39;
 }
 
-.form-us__text:focus {
+.form-us__text:focus-visible {
   background: #292E39;
   border: 1px solid var(--blueFoc);
 }
@@ -2443,7 +2456,7 @@ circle {
   background: #292E39;
 }
 
-.form-us__name:focus {
+.form-us__name:focus-visible {
   background: #292E39;
   border: 1px solid var(--blueFoc);
 }
@@ -2459,7 +2472,7 @@ circle {
   background: #292E39;
 }
 
-.form-us__email:focus {
+.form-us__email:focus-visible {
   background: #292E39;
   border: 1px solid var(--blueFoc);
 }
@@ -2481,7 +2494,7 @@ circle {
   opacity: 1;
 }
 
-.genre__card:focus svg {
+.genre__card:focus-visible svg {
   opacity: 1;
 }
 
@@ -2493,7 +2506,7 @@ circle {
   filter: brightness(0.4)
 }
 
-.genre__card:focus .genre__img {
+.genre__card:focus-visible .genre__img {
   filter: brightness(0.4)
 }
 
@@ -2515,15 +2528,15 @@ circle {
 }
 
 
-.genre__card:focus .genre__title {
+.genre__card:focus-visible .genre__title {
   color: var(--colText);
 }
 
-.genre__card:focus .genre__text {
+.genre__card:focus-visible .genre__text {
   color: var(--colText);
 }
 
-.genre__card:focus .genre__border {
+.genre__card:focus-visible .genre__border {
   background: var(--blueFoc);
   border: 1px solid var(--blueFoc);
 }
@@ -2556,7 +2569,7 @@ circle {
   fill: #F0D288;
 }
 
-.new__link:focus {
+.new__link:focus-visible {
   color: var(--colText);
   background: #BB973E;
 }
@@ -2589,7 +2602,7 @@ circle {
   background: var(--blueFoc);
 }
 
-.form-us__btn:focus {
+.form-us__btn:focus-visible {
   outline: 2px solid var(--blueAc);
   background: var(--blueFoc);
 }
@@ -2610,7 +2623,7 @@ circle {
   color: var(--blueFoc);
 }
 
-.form-us__checkbox:focus+.form-us__box {
+.form-us__checkbox:focus-visible+.form-us__box {
   border: 1px solid var(--blueFoc);
 }
 
@@ -2620,7 +2633,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.footer__list-link:focus path {
+.footer__list-link:focus-visible path {
   fill: var(--blueFoc);
 }
 
@@ -2635,7 +2648,7 @@ circle {
   color: var(--blueHov);
 }
 
-.footer__nav-link:focus {
+.footer__nav-link:focus-visible {
   background: var(--blueFoc);
   color: #FFF;
 }
@@ -2650,7 +2663,7 @@ circle {
   color: var(--blueHov);
 }
 
-.step__btn:focus {
+.step__btn:focus-visible {
   color: var(--blueFoc);
 }
 
@@ -2676,15 +2689,15 @@ circle {
   background: var(--blueHov);
 }
 
-.otmena:focus {
+.otmena:focus-visible {
   border: 3px solid var(--blueFoc);
 }
 
-.otmena:focus::after {
+.otmena:focus-visible::after {
   background: var(--blueFoc);
 }
 
-.otmena:focus::before {
+.otmena:focus-visible::before {
   background: var(--blueFoc);
 }
 
@@ -2712,7 +2725,7 @@ circle {
   background: var(--blueFoc);
 }
 
-.form__btn:focus {
+.form__btn:focus-visible {
   outline: 2px solid var(--blueAc);
   background: var(--blueFoc);
 }
@@ -2725,7 +2738,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.input__socialF:focus path {
+.input__socialF:focus-visible path {
   fill: var(--blueFoc);
 }
 
@@ -2737,7 +2750,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.input__socialV:focus rect {
+.input__socialV:focus-visible rect {
   fill: var(--blueFoc);
 }
 
@@ -2749,7 +2762,7 @@ circle {
   fill: var(--blueHov);
 }
 
-.input__socialG:focus rect {
+.input__socialG:focus-visible rect {
   fill: var(--blueFoc);
 }
 
@@ -2761,7 +2774,7 @@ circle {
   background: #292E39;
 }
 
-.form__input:focus {
+.form__input:focus-visible {
   background: #292E39;
   border: 1px solid var(--blueFoc);
 }
@@ -3224,7 +3237,7 @@ circle {
     background: transparent;
   }
 
-  .burger:focus {
+  .burger:focus-visible {
     outline: 1px solid #fff;
     outline-offset: 5px;
   }
@@ -3988,7 +4001,7 @@ circle {
     border: 2px solid #6D31EE;
   }
 
-  .playlist__lab:focus .playlist__box {
+  .playlist__lab:focus-visible .playlist__box {
     border: 2px solid #6D31EE;
     background: #70737b64;
   }
@@ -4936,16 +4949,42 @@ circle {
 
 
 
+.choices__inner{
+  transition: background 0.3s ease;
+}
 
 
+.choices{
+  transition: all 0.3s ease;
+  overflow: visible;
+}
+
+.choices__list{
+  transition: all 1s ease;
+}
+
+.is-active{
+    transition: all 0.3s ease;
+}
 
 
+.choices__list .choices__list--dropdown .is-active{
+  transition: all 1s ease;
+}
 
+.choices__list--dropdown,
+.choices__list[aria-expanded]{
+    transition: all .3s ease;
+    visibility: visible;
+    opacity: 0;
+}
 
-
-
-
-
+.is-active.choices__list--dropdown,
+.is-active.choices__list[aria-expanded]{
+transition: all .3s ease;
+/* visibility: visible; */
+opacity: 1;
+}
 
 
 
